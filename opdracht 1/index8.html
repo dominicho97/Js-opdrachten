@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise_8</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <form>
+      <label for="age">Your age : </label
+      ><input type="text" id="age" name="age" /><br />
+      <button id="validate" name="validate" onclick="controlAge">
+        Validate
+      </button>
+    </form>
+    <script>
+      age = document.getElementById("age");
+
+      function controlAge(age) {
+        if (age >= 18) {
+          console.log("U bent meerderjarig.");
+        } else {
+          console.log("U bent minderjarig.");
+        }
+      }
+
+      controlAge(age);
+    </script>
+  </body>
+</html>
