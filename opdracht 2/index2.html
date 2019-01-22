@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title> </title>
+    <meta name="description" content="The HTML5 Herald" />
+    <meta name="author" content="SitePoint" />
+  </head>
+
+  <body>
+    <button id="button1" onclick="surfaceRectangle()">
+      Bereken het oppervlak van een rechthoek
+    </button>
+
+    <button id="button2" onclick="perimeterRectangle()">
+      Bereken de omtrek van een rechthoek
+    </button>
+
+    >
+    <script>
+      let height = 5;
+      let width = 20;
+      let button = document.getElementById("button1");
+      document.onclick = surfaceRectangle();
+
+      function surfaceRectangle(e) {
+        console.log("De oppervlakte is " + height * width);
+      }
+
+      surfaceRectangle(height, width);
+
+      let button2 = document.getElementById("button2");
+      document.onclick = perimeterRectangle();
+
+      function perimeterRectangle(e) {
+        console.log("De omtrek is " + (height + width));
+      }
+
+      perimeterRectangle(height, width);
+    </script>
+  </body>
+</html>
