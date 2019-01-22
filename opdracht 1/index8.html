@@ -13,17 +13,19 @@
       </button>
     </form>
     <script>
-      parseInt((age = document.getElementById("age").value));
+      // parseInt((age = document.getElementById("age").value));
 
-      function controlAge(age) {
-        if (age >= 18) {
-          console.log("U bent meerderjarig.");
+      let number = document.getElementById("age");
+      let button = document.getElementById("validate");
+
+      function controlAge(number) {
+        if (number > 18) {
+          alert("U bent meerderjarig.");
         } else {
-          console.log("U bent minderjarig.");
+          alert("U bent minderjarig.");
         }
       }
-
-      controlAge(age);
+      controlAge(number);
     </script>
   </body>
 </html>
