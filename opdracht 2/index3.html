@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title> </title>
+    <meta name="description" content="opdracht 2" />
+    <meta name="author" content="SitePoint" />
+  </head>
+
+  <button id="oppervlakte">Bereken oppervlakte</button>
+
+  <body>
+    <script>
+      let straal = 100;
+      const button = document.getElementById("oppervlakte");
+      button.addEventListener("click", function(event) {
+        prompt("Voer hier de straal in");
+        return Math.PI * straal * straal;
+      });
+    </script>
+  </body>
+</html>
