@@ -45,3 +45,6 @@ document.querySelector("pre").style.borderTop = "3px solid red";
 
 //met de style eigenschap voeg een border-bottom van 3px solid red toe.
 document.querySelector("pre").style.borderBottom = "3px solid red";
+
+//Selecteer het eerste element van het type h3.
+document.querySelector("h3").innerHTML = "<strong>HTML doesn't work !</strong>";
