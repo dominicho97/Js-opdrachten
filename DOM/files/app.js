@@ -59,3 +59,8 @@ document.querySelector("ul").document.createElement("li").innerHTML = //???
 document.querySelectorAll("a[href='http://www.google.com']").style.color =
   "rose";
 */
+
+//EXCERCISE 5
+//selecteer het eerste 'ol' element, selecteer alle 'li' elementen van deze 'ol' dankzij de children eigendom, verwijder elk kind van ol dankzij removeChild()
+
+document.querySelector("ol)").children.removeChild();
