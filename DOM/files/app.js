@@ -30,7 +30,7 @@ document.querySelector("blockquote").classList.add("bg-white");
 
 // add class shadow to every paragraph in container
 document.querySelectorAll("p").style.textshadow =
-  "5px 5px 1px #ff0000,10px 10px 1px #0000ff";*/
+  "5px 5px 1px #ff0000,10px 10px 1px #0000ff";
 
 //EXCERCISE 3
 // Selecteer alle elementen van het type <pre>.M et de eigenschap style wijzigt u de tekstkleur.
@@ -48,3 +48,14 @@ document.querySelector("pre").style.borderBottom = "3px solid red";
 
 //Selecteer het eerste element van het type h3.
 document.querySelector("h3").innerHTML = "<strong>HTML doesn't work !</strong>";
+
+// EXCERCISE 4
+//selecteer de eerste ul,creëer een li element,voeg deze tekst toe My best friend is <a href='http://www.google.com'>Google</a> in de li,voeg deze li toe in de ul
+
+document.querySelector("ul").document.createElement("li").innerHTML = //???
+  "My best friend is <a href='http://www.google.com'>Google</a>";
+
+//selecteer de eerste link in het eerder aangemaakte li, met de eigenschap style wijzigt u de tekstkleur van de link
+document.querySelectorAll("a[href='http://www.google.com']").style.color =
+  "rose";
+*/
