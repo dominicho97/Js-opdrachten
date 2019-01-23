@@ -39,3 +39,9 @@ document.querySelector("pre").style.color = "yellow";
 
 //met de style eigenschap verandert de achtergrondkleur dankzij backgroundColor.
 document.querySelector("pre").style.backgroundColor = "green";
+
+//met de style eigenschap voeg een border-top van 3px solid red toe (vergeet niet dat je op deze manier toegang hebt tot de eigenschappen van een object: ["prop-name"]).
+document.querySelector("pre").style.borderTop = "3px solid red";
+
+//met de style eigenschap voeg een border-bottom van 3px solid red toe.
+document.querySelector("pre").style.borderBottom = "3px solid red";
