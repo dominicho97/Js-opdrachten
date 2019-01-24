@@ -6,4 +6,4 @@ const currentTitle = episodes.forEach($episode => {
   }
 });
 
-document.getElementById("haha").classList.add("highlight");
+document.querySelector("h2").classList.add("highlight");
