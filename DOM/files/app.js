@@ -52,7 +52,7 @@ document.querySelector("h3").innerHTML = "<strong>HTML doesn't work !</strong>";
 // EXCERCISE 4
 //selecteer de eerste ul,creëer een li element,voeg deze tekst toe My best friend is <a href='http://www.google.com'>Google</a> in de li,voeg deze li toe in de ul
 
-document.querySelector("ul").document.createElement("li").innerHTML = //???
+document.querySelector("ul").document.createElement("li").innerHTML = 
   "My best friend is <a href='http://www.google.com'>Google</a>";
 
 //selecteer de eerste link in het eerder aangemaakte li, met de eigenschap style wijzigt u de tekstkleur van de link
@@ -64,3 +64,11 @@ document.querySelectorAll("a[href='http://www.google.com']").style.color =
 //selecteer het eerste 'ol' element, selecteer alle 'li' elementen van deze 'ol' dankzij de children eigendom, verwijder elk kind van ol dankzij removeChild()
 
 document.querySelector("ol)").children.removeChild();
+
+//maak een array aan met de volgende gegevens: ["Silent Teacher","Code Monkey", "CodeCombat"]
+const array = [" Silent Teacher", "Code Monkey", "CodeCombat"];
+
+//plaats elke waarde van de array in een li element
+document.getElementsByClassName("bg-fuchsia").classlist.add(array);
+
+//voeg vervolgens elk li element toe aan de eerder leeg gemaakte 'ol'
