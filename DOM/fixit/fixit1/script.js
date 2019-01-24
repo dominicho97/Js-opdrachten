@@ -1,2 +1,4 @@
-const writers = document.querySelectorAll(`episode-writer`);
-writers.forEach($writer => console.count($writer));
+const writers = document.querySelectorAll(`span.episode-writer`);
+writers.forEach(writers => console.count(writers));
+
+console.log(writers);
