@@ -13,6 +13,9 @@
     <div class="hoverMe ">Boom! I'm gone!</div>
 
     <div id="reset">Click to reset!</div>
+
+    <div id="x-axis">x</div>
+    <div id="y-axis">y</div>
     <script>
       // oefening 1
       document
@@ -32,6 +35,17 @@
       }
 
       //oefening 3
+      document
+        .getElementById("x-axis")
+        .addEventListener("mousemove", handleMouseMove);
+
+      function handleMouseMove(event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        document.getElementById("x-axis").innerHTML = coords;
+        document.getElementById("y-axis").innerHTML = coords;
+      }
     </script>
   </body>
 </html>
