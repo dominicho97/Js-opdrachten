@@ -11,7 +11,7 @@
   <body>
     <div id="character">character</div>
 
-    <div class="directions">
+    <div class="highlight">
       <div id="up">up</div>
 
       <div id="down">down</div>
@@ -22,16 +22,60 @@
     </div>
 
     <script>
-      /* //opdracht 1
-      document
-        .getElementById("character")
-        .addEventListener("keydown", handleKeydown);
+      //opdracht 1
 
-      function handleKeydown() {
-        console.log("any key pushed!");
+      window.addEventListener("keydown", event => {
+        switch (event.keyCode) {
+          case 49:
+            setBackgroundColor("red");
+            break;
+          case 50:
+            setBackgroundColor("green");
+            break;
+          case 51:
+            setBackgroundColor("blue");
+            break;
+          case 52:
+            setBackgroundColor("yellow");
+            break;
+          case 53:
+            setBackgroundColor("black");
+            break;
+          case 54:
+            setBackgroundColor("white");
+            break;
+          case 55:
+            setBackgroundColor("purple");
+            break;
+          case 56:
+            setBackgroundColor("#333");
+        }
+      });
+
+      function setBackgroundColor(color) {
+        document.querySelector("body").style.backgroundColor = color;
       }
-*/
       //opdracht 2
+
+      document.getElementById("up").addEventListener("keydown", upPressed);
+      document.getElementById("down").addEventListener("keydown", downPressed);
+      document.getElementById("left").addEventListener("keydown", leftPressed);
+      document
+        .getElementById("right")
+        .addEventListener("keydown", rightPressed);
+
+      function upPressed() {
+        document.getElementById("up").classList.add("highlight");
+      }
+      function downPressed() {
+        document.getElementById("down").classList.add("highlight");
+      }
+      function leftPressed() {
+        document.getElementById("left").classList.add("highlight");
+      }
+      function rightPressed() {
+        document.getElementById("right").classList.add("highlight");
+      }
     </script>
   </body>
 </html>
