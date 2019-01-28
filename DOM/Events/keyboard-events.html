@@ -57,6 +57,7 @@
       }
       //opdracht 2
 
+      // get elements
       document.getElementById("up").addEventListener("keydown", upPressed);
       document.getElementById("down").addEventListener("keydown", downPressed);
       document.getElementById("left").addEventListener("keydown", leftPressed);
@@ -64,6 +65,7 @@
         .getElementById("right")
         .addEventListener("keydown", rightPressed);
 
+      // change
       function upPressed() {
         document.getElementById("up").classList.add("highlight");
       }
@@ -76,6 +78,14 @@
       function rightPressed() {
         document.getElementById("right").classList.add("highlight");
       }
+
+      //remove change
+      document.getElementById("up").removeEventListener("keydup", upPressed);
+      document.getElementById("down").removeEventListener("keyup", downPressed);
+      document.getElementById("left").removeEventListener("keyup", leftPressed);
+      document
+        .getElementById("left")
+        .removeEventListener("keyup", rightPressed);
     </script>
   </body>
 </html>
