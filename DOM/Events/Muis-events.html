@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Muisevents</title>
+    <!--https://github.com/becodeorg/ANT-Lamarr-1.8/blob/master/02-De-helling/02-Javascript/Curriculum/Part_2/02-Events/exerciseMouse.md-->
+  </head>
+  <body>
+    <div class="hoverMe ">Boom! I'm gone!</div>
+    <div class="hoverMe ">Boom! I'm gone!</div>
+    <div class="hoverMe ">Boom! I'm gone!</div>
+
+    <div id="reset">Click to reset!</div>
+    <script>
+      // oefening 1
+      document
+        .querySelector(".hoverMe")
+        .addEventListener("mouseenter", handleMouseover);
+
+      function handleMouseover() {
+        document.querySelector(".hoverMe").style.color = "white";
+      }
+
+      //oefening 2 not working
+
+      document.getElementById("reset").addEventListener("click", removeHandler);
+
+      function removeHandler() {
+        reset.removeEventListener("mouseenter", handleMouseover);
+      }
+
+      //oefening 3
+    </script>
+  </body>
+</html>
