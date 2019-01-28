@@ -1,7 +1,7 @@
 const episodes = document.querySelectorAll(`.episode-item`);
 
 const sortEpisodeByTitle = ($a, $b) => {
-  const titleA = ;
+  const titleA = document.getElementsByTagName('span') ;
   const titleB = ;
   if(titleA < titleB){
     return -1;
