@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Opdracht 2</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Name : </label
+      ><input
+        type="text"
+        name="name"
+        value=""
+        id="name"
+        onblur="handleBlur()"
+      />
+    </form>
+
+    <script>
+      "name".addEventListener("blur", handleBlur);
+
+      function handleBlur() {
+        alert("Bedankt voor uw deelname");
+      }
+    </script>
+  </body>
+</html>
