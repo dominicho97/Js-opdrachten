@@ -9,7 +9,7 @@
     <title>Keyboard events</title>
   </head>
   <body>
-    <div id="character">character</div>
+    <div class="character">character</div>
 
     <div class="highlight">
       <div id="up">up</div>
@@ -23,38 +23,25 @@
 
     <script>
       //opdracht 1
+      const cover = document.querySelector(".character");
 
-      window.addEventListener("keydown", event => {
-        switch (event.keyCode) {
-          case 49:
-            setBackgroundColor("red");
+      cover.addEventListener("keydown", function(event) {
+        const keyname = event.key;
+        console.log(keyname);
+        switch (keyName) {
+          case "0":
+            cover.style.background = "red";
             break;
-          case 50:
-            setBackgroundColor("green");
+          case "1":
+            cover.style.background = "green";
             break;
-          case 51:
-            setBackgroundColor("blue");
+          case "2":
+            cover.style.background = "blue";
             break;
-          case 52:
-            setBackgroundColor("yellow");
-            break;
-          case 53:
-            setBackgroundColor("black");
-            break;
-          case 54:
-            setBackgroundColor("white");
-            break;
-          case 55:
-            setBackgroundColor("purple");
-            break;
-          case 56:
-            setBackgroundColor("#333");
+          default:
         }
       });
 
-      function setBackgroundColor(color) {
-        document.querySelector("body").style.backgroundColor = color;
-      }
       //opdracht 2
 
       // get elements
