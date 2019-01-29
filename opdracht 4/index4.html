@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Opdracht 4</title>
+  </head>
+  <body>
+    <form>
+      <label for="password">Password : </label
+      ><input type="text" name="password" value="" id="password" />
+      <label for="confirmation">Confirm : </label
+      ><input type="text" name="confirmation" value="" id="confirmation" />
+      <button type="button" name="button">Submit</button>
+    </form>
+    <script>
+      // get elements
+      x = document
+        .getElementById("password")
+        .addEventListener("keydown", handlePass1);
+      y = document
+        .getElementById("confirmation")
+        .addEventListener("keydown", handlePass2);
+      // events
+      function handlePass1() {
+        if (x === y) {
+          x.style.color = "green";
+        } else {
+          x.style.color = "red";
+        }
+      }
+      function handlePass2() {
+        if (x === y) {
+          x.style.color = "green";
+        } else {
+          x.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
