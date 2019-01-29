@@ -47,13 +47,18 @@ var CapitalString = function() {
 // Put the string in lowercase
 var MinimalizeString = function() {
   const stringToMin = "minMeMate";
+  console.log(stringToMin.toLowerCase());
 };
 
 // Delete spaces before and after the chain
-var SupprEspaceString = function(text) {};
+var SupprEspaceString = function() {
+  const stringWithSpace = "all these goddamn spaces in these goddamn strings";
+  const noSpace = stringWithSpace.replace(/\s/g, "");
+  console.log(noSpace);
+};
 
 // Show true if the input parameter of the function is of type string
-var IsString = function(text) {};
+var IsString = function() {};
 
 // Display the file extension
 var ExtensionString = function(text) {};
@@ -62,20 +67,34 @@ var ExtensionString = function(text) {};
 var NumberEspaceString = function(text) {};
 
 // Reverse a string of characters
-var InverseString = function(text) {};
+var InverseString = function() {
+  const stringToReverse = "hello";
+  const reveseString = stringToReverse
+    .split("")
+    .reverse()
+    .join();
+  console.log(reveseString);
+};
 
 /**
  * Oefeningen over getallen en wiskundige berekeningen
  */
 
 // Calculate the power of one number in relation to another (x to the power y)
-var CalculationPower = function(x, y) {};
+var CalculationPower = function(x, y) {
+  const power = x * y;
+  console.log(power);
+};
 
 // Display the absolute value of a number
 var ValueAbsolute = function(number) {};
+const abs = Math.abs(-10.5);
+console.log(abs);
 
 // Display the absolute values of several numbers
-var ValueAbsoluteArray = function(array) {};
+var ValueAbsoluteArray = function(array) {
+  const normalAray = [-1, 2, -3, 4, -5];
+};
 
 // Calculate the surface area of a circle according to its radius. Round it up to the nearest integer
 var SufaceCircle = function(radius) {};
