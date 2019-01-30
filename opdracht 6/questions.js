@@ -43,7 +43,10 @@ var DeleteLastElement = function(languages) {};
 
 // Make the "social_networks_chain" chain into a "social_networks" array
 var social_networks_chain = "Facebook,Twitter,Google +,Viadeo,LinkedIn";
-var ArrayStringConversion = function(social_networks_chain) {};
+var ArrayStringConversion = function(social_networks_chain) {
+  const deleteLast = social_networks_chain.splice(2, 4);
+  console.log(social_networks);
+};
 
 // Make the "languages" array into a "languages_chaine" string. Separate languages with a comma
 var languages = ["CSS", "Javascript", "PHP", "Ruby"];
@@ -51,8 +54,14 @@ var ChainArrayConversion = function(languages) {};
 
 // Sort the "social_networks" array
 var social_networks = ["Facebook", "Twitter", "Google +", "Viadeo", "LinkedIn"];
-var SortingArray = function(social_networks) {};
+var SortingArray = function(social_networks) {
+  const sortedArray = social_networks.sort();
+  console.log(social_networks);
+};
 
 // Bonus: Reverse the "languages" array
 var languages = ["CSS", "Javascript", "PHP", "Ruby"];
-var ReverseArray = function(languages) {};
+var ReverseArray = function(languages) {
+  const reversed = languages.Reverse();
+  console.log(languages);
+};
