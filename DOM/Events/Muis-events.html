@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="hoverMe ">Boom! I'm gone!</div>
-    <div class="hoverMe ">Boom! I'm gone!</div>
-    <div class="hoverMe ">Boom! I'm gone!</div>
+    <div class="hoverMe2 ">Boom! I'm gone!</div>
+    <div class="hoverMe3">Boom! I'm gone!</div>
 
     <div id="reset">Click to reset!</div>
 
@@ -21,9 +21,21 @@
       document
         .querySelector(".hoverMe")
         .addEventListener("mouseenter", handleMouseover);
-
+      document
+        .querySelector(".hoverMe2")
+        .addEventListener("mouseenter", handleMouseover2);
+      document
+        .querySelector(".hoverMe3")
+        .addEventListener("mouseenter", handleMouseover3);
+      //
       function handleMouseover() {
         document.querySelector(".hoverMe").style.color = "white";
+      }
+      function handleMouseover2() {
+        document.querySelector(".hoverMe2").style.color = "white";
+      }
+      function handleMouseover3() {
+        document.querySelector(".hoverMe3").style.color = "white";
       }
 
       //oefening 2 not working
