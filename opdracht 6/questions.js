@@ -1,24 +1,41 @@
 // Create a array containing "Html", "CSS", "Java", "PHP"
-var CreationArrayLanguages = function() {};
+var CreationArrayLanguages = function() {
+  const createArray = ["Html", "CSS", "Java", "PHP"];
+  console.log(createArray);
+};
 
 // Create a array containing the numbers from 0 to 5
-var CreateArrayNumbers = function() {};
+var CreateArrayNumbers = function() {
+  const numberArray = [0, 1, 2, 3, 4, 5];
+  console.log(numberArray);
+};
 
 // Replace the third element of the array with "Javascript"
 var languages = ["Html", "CSS", "Java", "PHP"];
-var ReplacementElement = function(languages) {};
+var ReplacementElement = function(languages) {
+  const word = /Java/gi; // replace the word Java
+  console.log(languages.replace(word, "Javascript"));
+};
 
 // Add "Ruby" and "Python" at the end of the array
 var languages = ["Html", "CSS", "Javascript", "PHP"];
-var AddElementLanguages = function(languages) {};
+var AddElementLanguages = function(languages) {
+  languages.push("Ruby", "Python");
+  console.log(languages);
+};
 
 // Add "-2" and "-1" at the beginning of the table numbers
 var numbers = [0, 1, 2, 3, 4, 5];
-var AddElementNumbers = function(numbers) {};
-
+var AddElementNumbers = function(numbers) {
+  numbers.unshift(-2, -1);
+  console.log(numbers);
+};
 // Delete the first element of the languages array
 var languages = ["Html", "CSS", "Javascript", "PHP", "Ruby", "Python"];
-var DeletingFirstElement = function(languages) {};
+var DeletingFirstElement = function(languages) {
+  languages.shift();
+  console.log(languages);
+};
 
 // Delete the last element of the languages array
 var languages = ["CSS", "Javascript", "PHP", "Ruby", "Python"];
