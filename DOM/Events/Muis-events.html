@@ -12,7 +12,7 @@
     <div class="hoverMe2 ">Boom! I'm gone!</div>
     <div class="hoverMe3">Boom! I'm gone!</div>
 
-    <div id="reset">Click to reset!</div>
+    <div class="reset">Click to reset!</div>
 
     <div id="x-axis">x</div>
     <div id="y-axis">y</div>
@@ -40,10 +40,10 @@
 
       //oefening 2 not working
 
-      document.getElementById("reset").addEventListener("click", removeHandler);
+      document.querySelector(".reset").addEventListener("click", removeHandler);
 
       function removeHandler() {
-        reset.removeEventListener("mouseenter", handleMouseover);
+        document.removeEventListener("mouseenter", handleMouseover);
       }
 
       //oefening 3
