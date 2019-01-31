@@ -18,12 +18,54 @@
       }
       calcSurface();*/
       //4.2
-      function rand10() {
-        alert(Math.random(0, 10));
+      /*function rand10() {
+        console.log(Math.random(0, 10));
       }
 
       rand10();
       //4.3
+
+      function multiRand(n) {
+        const randomArray = { n };
+        n = rand10();
+        console.log(randomArray);
+      }
+      multiRand();*/
+      //4.4
+      //argument
+      const givenArray = [1, 2, 3, 4, 5];
+      //average
+      function averageArr() {
+        arrayLength = givenArray.length;
+
+        var sum = [1, 2, 3, 4, 5].reduce((a, b) => a + b, 0);
+
+        console.log(sum / arrayLength);
+      }
+      averageArr();
+
+      //minimum
+      function minArr() {
+        const minArray = Math.min.apply(null, givenArray);
+        console.log(minArray);
+      }
+      minArr();
+      //maximum
+      function maxArr() {
+        const maxArray = Math.max.apply(null, givenArray);
+        console.log(maxArray);
+      }
+      maxArr();
+      //4.5
+
+      function factorialize(num) {
+        if (num < 0) return -1;
+        else if (num == 0) return 1;
+        else {
+          return num * factorialize(num - 1);
+        }
+      }
+      factorialize(5);
     </script>
   </body>
 </html>
